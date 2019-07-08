@@ -18,10 +18,7 @@ namespace LabCrashFromBackground.Controllers
 
         public string Crash()
         {
-            HostingEnvironment.QueueBackgroundWorkItem(Action => {
-                Thread.Sleep(10000);
-                throw new ApplicationException("Crashing...");
-            });
+            MvcApplication.CrashIt = true;
             return "Process will crash in 10 seconds";
         }
     }
