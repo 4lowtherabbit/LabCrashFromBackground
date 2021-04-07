@@ -6,7 +6,7 @@
     "siteName": "[concat(toLower(variables('hostingPlanName')), uniqueString(resourceGroup().id))]",
     "sku": "s1",
     "workerSize": "0",
-    "repoURL": "https://github.com/4lowtherabbit/AppService.ELX.Spec.Perf.1.git",
+    "repoURL": "https://github.com/4lowtherabbit/LabCrashFromBackground.git",
     "branch": "master"
   },
   "resources": [
